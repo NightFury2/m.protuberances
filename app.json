@@ -1,0 +1,19 @@
+{
+  "name": "m.protuberances",
+  "description": "The mobile version for site protuberances.ru",
+  "repository": "https://github.com/NightFury2/m.protuberances",
+  "logo": "http://node-js-sample.herokuapp.com/node.svg",
+  "keywords": [
+    "react",
+    "isomorphic",
+    "universal",
+    "webpack",
+    "express",
+    "hot reloading",
+    "react-hot-reloader",
+    "redux",
+    "starter",
+    "boilerplate",
+    "babel"
+  ]
+}
