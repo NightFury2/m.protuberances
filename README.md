@@ -18,18 +18,18 @@
 ```
 npm install
 ```
-## watch and autobuild
+## Development
 ```
-npm run watch
+npm run dev
 ```
-## run server
-```
-npm start
-```
-## manual build
-* create bundle.js
+## Production
+* Build app
 ```
 npm run build
+```
+* Run server
+```
+npm run start
 ```
 ## test 
 
