@@ -4,4 +4,4 @@
  *  ie: import { CounterButton, InfoBar } from 'components';
  *
  */
-export InfoBar from './InfoBar/InfoBar';
+

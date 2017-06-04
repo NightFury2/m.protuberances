@@ -11,25 +11,25 @@ const environment = {
 
 module.exports = Object.assign({
   host: process.env.HOST || 'localhost',
-  port: process.env.PORT || '8080',
-  apiHost: process.env.APIHOST || 'localhost',
-  apiPort: process.env.APIPORT,
+  port: process.env.PORT,
+  apiHost: process.env.APIHOST || '127.0.0.1',
+  apiPort: process.env.APIPORT || '8000',
   app: {
-    title: 'React Redux Example',
-    description: 'All the modern best practices in one example.',
+    title: 'Protuberance Show',
+    description: 'Официальный сайт Театр танца и огня Protuberance (Протуберанс, Протуберанец)',
     head: {
-      titleTemplate: 'React Redux Example: %s',
+      titleTemplate: 'Театр огня и танца Protuberance: %s',
       meta: [
-        {name: 'description', content: 'All the modern best practices in one example.'},
+        {name: 'description', content: 'Официальный сайт Театр танца и огня Protuberance (Протуберанс, Протуберанец)'},
         {charset: 'utf-8'},
-        {property: 'og:site_name', content: 'React Redux Example'},
-        {property: 'og:image', content: 'https://react-redux.herokuapp.com/logo.jpg'},
-        {property: 'og:locale', content: 'en_US'},
-        {property: 'og:title', content: 'React Redux Example'},
-        {property: 'og:description', content: 'All the modern best practices in one example.'},
+        {property: 'og:site_name', content: 'Protuberance Show'},
+        {property: 'og:image', content: 'http://protuberances.ru/static/img/logo_protub.png'},
+        {property: 'og:locale', content: 'ru-RU'},
+        {property: 'og:title', content: 'Protuberance Show'},
+        {property: 'og:description', content: 'Официальный сайт Театр танца и огня Protuberance (Протуберанс, Протуберанец)'},
         {property: 'og:card', content: 'summary'},
-        {property: 'og:site', content: '@erikras'},
-        {property: 'og:creator', content: '@erikras'},
+        {property: 'og:site', content: 'Protuberance Theatre'},
+        {property: 'og:creator', content: '@NightFury'},
         {property: 'og:image:width', content: '200'},
         {property: 'og:image:height', content: '200'}
       ]

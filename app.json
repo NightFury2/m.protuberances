@@ -1,8 +1,11 @@
 {
-  "name": "m.protuberances",
-  "description": "The mobile version for site protuberances.ru",
-  "repository": "https://github.com/NightFury2/m.protuberances",
-  "logo": "http://node-js-sample.herokuapp.com/node.svg",
+  "name": "Protuberances",
+  "description": "protuberances.ru mobile version",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NightFury2/m.protuberances.git"
+  },
+  "logo": "http://protuberances.ru/static/img/favicon.ico",
   "keywords": [
     "react",
     "isomorphic",
