@@ -1,14 +1,11 @@
-import React, { Component, PropTypes } from 'react';
+import React from 'react';
+import { CSSTransitionGroup } from 'react-transition-group';
 import Helmet from 'react-helmet';
 import config from '../../config';
 
-export default class App extends Component {
+export default class App extends React.Component {
   static propTypes = {
-    children: PropTypes.object.isRequired
-  };
-
-  static contextTypes = {
-    store: PropTypes.object.isRequired
+    children: React.PropTypes.object.isRequired
   };
 
   render() {
@@ -18,7 +15,18 @@ export default class App extends Component {
         <Helmet {...config.app.head}/>
         <h1>Hello App</h1>
         <div className={styles.appContent}>
-          {this.props.children}
+          <CSSTransitionGroup
+            transitionEnterTimeout={500}
+            transitionLeaveTimeout={300}
+            transitionName={ {
+              enter: '__enter',
+              enterActive: '__enter_active',
+              leave: '__leave',
+              leaveActive: '__leave_active',
+              appear: '__appear',
+              appearActive: '__appear_active'}}>
+            {this.props.children}
+          </CSSTransitionGroup>
         </div>
       </div>
     );
